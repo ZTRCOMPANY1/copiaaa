@@ -1,0 +1,100 @@
+/* Importando fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0d0d0d; /* Fundo escuro para um efeito mais gamer */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cabeçalho estilizado */
+header {
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 242, 96, 0.5);
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Efeito de entrada no cabeçalho */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Links do menu com efeito neon */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Efeito neon ao passar o mouse */
+nav ul li a:hover {
+    color: #00f260;
+    text-shadow: 0 0 10px #00f260, 0 0 20px #0575e6;
+    transform: scale(1.1);
+}
+
+/* Animação no conteúdo principal */
+main {
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+/* Botões futuristas */
+button {
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 242, 96, 0.5);
+}
+
+/* Efeito de brilho nos botões ao passar o mouse */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 242, 96, 0.8), 0px 0px 25px rgba(5, 117, 230, 0.8);
+}
